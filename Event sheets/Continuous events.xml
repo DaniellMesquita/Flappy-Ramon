@@ -136,182 +136,222 @@
         <event-group description="" sid="9558025647412417" title="Collisions">
             <sub-events>
                 <comment>End the game if the bird touches any obstacle or leaves the layout.</comment>
-                <event-block sid="170743918900562">
+                <event-block sid="7365620846625415">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="6202042408238202" type="Madruga">
-                            <param id="0" name="Object">TiledBackground2</param>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="6441401405232141" type="Madruga">
+                            <param id="0" name="Instance variable">Queda</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="24375477276577" type="Madruga">
-                            <param id="0" name="Instance variable">Queda</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="6760509141871533" type="System">
-                            <param id="0" name="Variable">SCROLLSPEED</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="7343673921715223" type="System">
-                            <param id="0" name="Variable">SECONDSPEROBSTACLE</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="7909076025066452" type="Audio">
-                            <param id="0" name="Audio file">beat</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="5688260657018727" type="Audio">
-                            <param id="0" name="Tag">&quot;Music&quot;</param>
-                        </action>
-                        <action id="2" name="Set visible" sid="3722388371141531" type="Play_Continuous">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="3" name="Set enabled" sid="2178429838278043" type="Play_Continuous">
-                            <param id="0" name="Mode">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block sid="4987440076445908">
+                        <event-block sid="170743918900562">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="5452368506789912" type="System">
-                                    <param id="0" name="Variable">Score</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                <condition id="0" name="On collision with another object" sid="6202042408238202" type="Madruga">
+                                    <param id="0" name="Object">TiledBackground2</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" sid="9818103528532658" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set local value" sid="1389927765718603" type="WebStorage">
-                                    <param id="0" name="Key">&quot;Highscore&quot;</param>
-                                    <param id="1" name="Value">Score</param>
+                                <action id="-13" name="Set boolean" sid="24375477276577" type="Madruga">
+                                    <param id="0" name="Instance variable">Queda</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="8821406997890014">
-                            <conditions />
-                            <actions>
-                                <action id="0" name="Set text" sid="6967067031524396" type="Highscore">
-                                    <param id="0" name="Text">&quot;Highscore: &quot;&amp;Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                <action id="-9" name="Set value" sid="6760509141871533" type="System">
+                                    <param id="0" name="Variable">SCROLLSPEED</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-24" name="Move to top" sid="7942291735939303" type="Highscore" />
-                                <action id="-15" name="Set visible" sid="1693325998333692" type="Highscore">
+                                <action id="-9" name="Set value" sid="7343673921715223" type="System">
+                                    <param id="0" name="Variable">SECONDSPEROBSTACLE</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="7909076025066452" type="Audio">
+                                    <param id="0" name="Audio file">beat</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="5688260657018727" type="Audio">
+                                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="3722388371141531" type="Play_Continuous">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action id="3" name="Set enabled" sid="2178429838278043" type="Play_Continuous">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="4987440076445908">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5452368506789912" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="9818103528532658" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set local value" sid="1389927765718603" type="WebStorage">
+                                            <param id="0" name="Key">&quot;Highscore&quot;</param>
+                                            <param id="1" name="Value">Score</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="8821406997890014">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Set text" sid="6967067031524396" type="Highscore">
+                                            <param id="0" name="Text">&quot;Highscore: &quot;&amp;Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="7942291735939303" type="Highscore" />
+                                        <action id="-15" name="Set visible" sid="1693325998333692" type="Highscore">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="3130471190776897">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="7033929425378829" type="Madruga">
-                            <param id="0" name="Object">TopPipe</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="8175178725111918" type="Madruga">
-                            <param id="0" name="Instance variable">Queda</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="5824171366959829" type="System">
-                            <param id="0" name="Variable">SCROLLSPEED</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="2868719827621809" type="System">
-                            <param id="0" name="Variable">SECONDSPEROBSTACLE</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="5941944566861436" type="Audio">
-                            <param id="0" name="Audio file">beat</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="8774674421543586" type="Audio">
-                            <param id="0" name="Tag">&quot;Music&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="4148708529787939" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action id="0" name="Play" sid="2496944150105104" type="Audio">
-                            <param id="0" name="Audio file">Queda</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="2" name="Set visible" sid="6706890323135507" type="Play_Continuous">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="3" name="Set enabled" sid="6464097921294303" type="Play_Continuous">
-                            <param id="0" name="Mode">1</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="4999406637386386">
+                        <event-block sid="3130471190776897">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="6589028051780808" type="System">
-                                    <param id="0" name="Variable">Score</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                <condition id="0" name="On collision with another object" sid="7033929425378829" type="Madruga">
+                                    <param id="0" name="Object">TopPipe</param>
                                 </condition>
-                                <condition id="-4" name="Trigger once while true" sid="1568707430396682" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set local value" sid="9887217100628827" type="WebStorage">
-                                    <param id="0" name="Key">&quot;Highscore&quot;</param>
-                                    <param id="1" name="Value">Score</param>
+                                <action id="-13" name="Set boolean" sid="8175178725111918" type="Madruga">
+                                    <param id="0" name="Instance variable">Queda</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="715855042734">
-                            <conditions />
-                            <actions>
-                                <action id="0" name="Set text" sid="28005436726843" type="Highscore">
-                                    <param id="0" name="Text">&quot;Highscore: &quot;&amp;Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                <action id="-9" name="Set value" sid="5824171366959829" type="System">
+                                    <param id="0" name="Variable">SCROLLSPEED</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-24" name="Move to top" sid="4625116195911617" type="Highscore" />
-                                <action id="-15" name="Set visible" sid="7696124005445517" type="Highscore">
+                                <action id="-9" name="Set value" sid="2868719827621809" type="System">
+                                    <param id="0" name="Variable">SECONDSPEROBSTACLE</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="5941944566861436" type="Audio">
+                                    <param id="0" name="Audio file">beat</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="8774674421543586" type="Audio">
+                                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4148708529787939" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Play" sid="2496944150105104" type="Audio">
+                                    <param id="0" name="Audio file">Queda</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="6706890323135507" type="Play_Continuous">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action id="3" name="Set enabled" sid="6464097921294303" type="Play_Continuous">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="4999406637386386">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="6589028051780808" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="1568707430396682" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set local value" sid="9887217100628827" type="WebStorage">
+                                            <param id="0" name="Key">&quot;Highscore&quot;</param>
+                                            <param id="1" name="Value">Score</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="715855042734">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Set text" sid="28005436726843" type="Highscore">
+                                            <param id="0" name="Text">&quot;Highscore: &quot;&amp;Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="4625116195911617" type="Highscore" />
+                                        <action id="-15" name="Set visible" sid="7696124005445517" type="Highscore">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="1336496314225453">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="3428193040157849" type="Madruga">
+                                    <param id="0" name="Object">BottomPipe</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="5591029893905647" type="Madruga">
+                                    <param id="0" name="Instance variable">Queda</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3162483039882083" type="System">
+                                    <param id="0" name="Variable">SCROLLSPEED</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8155791413281263" type="System">
+                                    <param id="0" name="Variable">SECONDSPEROBSTACLE</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="4948661296232584" type="Audio">
+                                    <param id="0" name="Audio file">beat</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="3845496294244099" type="Audio">
+                                    <param id="0" name="Tag">&quot;Music&quot;</param>
+                                </action>
+                                <action id="2" name="Set visible" sid="6055088701208687" type="Play_Continuous">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="3" name="Set enabled" sid="9784062444751974" type="Play_Continuous">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="5467540996491119">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="1234326134303063" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="3885065103170919" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set local value" sid="6588184013119975" type="WebStorage">
+                                            <param id="0" name="Key">&quot;Highscore&quot;</param>
+                                            <param id="1" name="Value">Score</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="5644737791030659">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Set text" sid="359859122002017" type="Highscore">
+                                            <param id="0" name="Text">&quot;Highscore: &quot;&amp;Webstorage.localvalue(&quot;Highscore&quot;)</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="8531934170402215" type="Highscore" />
+                                        <action id="-15" name="Set visible" sid="7580571259806774" type="Highscore">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="1336496314225453">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="3428193040157849" type="Madruga">
-                            <param id="0" name="Object">BottomPipe</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="5591029893905647" type="Madruga">
-                            <param id="0" name="Instance variable">Queda</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="3162483039882083" type="System">
-                            <param id="0" name="Variable">SCROLLSPEED</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="8155791413281263" type="System">
-                            <param id="0" name="Variable">SECONDSPEROBSTACLE</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="4948661296232584" type="Audio">
-                            <param id="0" name="Audio file">beat</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="3845496294244099" type="Audio">
-                            <param id="0" name="Tag">&quot;Music&quot;</param>
-                        </action>
-                        <action id="2" name="Set visible" sid="6055088701208687" type="Play_Continuous">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="3" name="Set enabled" sid="9784062444751974" type="Play_Continuous">
-                            <param id="0" name="Mode">1</param>
-                        </action>
-                    </actions>
                 </event-block>
                 <event-block sid="9569398275688901">
                     <conditions>
