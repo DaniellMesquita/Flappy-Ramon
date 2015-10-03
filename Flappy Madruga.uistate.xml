@@ -15,8 +15,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="3">Chaves</layout>
         <event-sheet order="1">Start events</event-sheet>
         <event-sheet order="5">Common in-game</event-sheet>
-        <event-sheet order="4">Chaves</event-sheet>
-        <event-sheet active="1" order="6">Common in-levels</event-sheet>
+        <event-sheet active="1" order="4">Chaves</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
