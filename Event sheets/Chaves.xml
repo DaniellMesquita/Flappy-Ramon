@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Chaves</name>
+    <events>
+        <variable constant="0" name="Required_Score" sid="2767063754133105" static="0" type="number">0</variable>
+        <include>Common in-game</include>
+        <event-block sid="9305905589121505">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9057472625506454" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9882117504755928" type="System">
+                    <param id="0" name="Variable">Required_Score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

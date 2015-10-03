@@ -1,11 +1,11 @@
-botoes Modo Historia e Modo Continuous
+modo continuous: avisar superaçao de highscore
+botoes Modo Historia
 country flag in author name
 
 voar somente ao tocar partes selecionadas da tela
 pause button
 levels button
 Touch or press enter to continue
-- fix hiscore error
 provocaçoes dos inimigos no jogo
 inimigos aleatorios no modo continuous
 settings menu
@@ -13,7 +13,6 @@ language no settings menu
 general sound no settings menu
 SFX no settings menu
 BGM no settings menu
-language no settings menu
 gamepad no settings menu
 about menu
 other games no about menu
@@ -75,7 +74,6 @@ Madruga: Você não pode ter feito isso! Socorro!
 
 [apos vencer cada fase, aparece o Super Sam dizendo Congratulations, tu fazer muchos pontos!]
 inimigos no modo historia:
-Chaves (10 pontos)
 Quico (25 pontos)
 Professor Girafales (50 pontos)
 Dona Florinda (100 pontos)
