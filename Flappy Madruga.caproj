@@ -2,7 +2,7 @@
 <c2project>
     <name>Flappy Madruga</name>
     <description>Seu Madruga sofreu um feitiço da Bruxa do 71 e foi transformado em um pássaro. Ajude-o a desviar dos inimigos e conseguir reverter o feitiço!</description>
-    <version>0.5.8.3</version>
+    <version>0.6.1.6</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -144,6 +144,49 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="4" loop="1" name="Chaves" pingpong="0" repeatcount="1" repeatto="0" sid="5517564450445491" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\1.png">
+                        <collision-poly>
+                            <point x="0.212766" y="0.0329489" />
+                            <point x="0.5" y="0.00494234" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212766" y="0.967051" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\2.png">
+                        <collision-poly>
+                            <point x="0.0425532" y="0.00658979" />
+                            <point x="0.5" y="0.00494234" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212766" y="0.967051" />
+                            <point x="0.212766" y="0.499176" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\3.png">
+                        <collision-poly>
+                            <point x="0.202128" y="0.0313015" />
+                            <point x="0.5" y="0.00494234" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212766" y="0.967051" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\4.png">
+                        <collision-poly>
+                            <point x="0.212766" y="0.0329489" />
+                            <point x="0.5" y="0.00494234" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="1" />
+                            <point x="0.212766" y="0.967051" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="TopPipe" sid="2967184419507498">
@@ -163,6 +206,49 @@
                             <point x="0.9" y="0.988411" />
                             <point x="0.5" y="1" />
                             <point x="0.114286" y="0.986755" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Chaves" pingpong="0" repeatcount="1" repeatto="0" sid="3466657213106805" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\1.png">
+                        <collision-poly>
+                            <point x="0.212766" y="0.0329489" />
+                            <point x="0.5" y="0" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="0.995058" />
+                            <point x="0.212766" y="0.967051" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\2.png">
+                        <collision-poly>
+                            <point x="0.212766" y="0.0329489" />
+                            <point x="0.5" y="0" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="0.995058" />
+                            <point x="0.0425532" y="0.99341" />
+                            <point x="0.212766" y="0.499176" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\3.png">
+                        <collision-poly>
+                            <point x="0.212766" y="0.0329489" />
+                            <point x="0.5" y="0" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="0.995058" />
+                            <point x="0.202128" y="0.968699" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500824" original-source="C:\Users\Plasma\Desktop\4.png">
+                        <collision-poly>
+                            <point x="0.212766" y="0.0329489" />
+                            <point x="0.5" y="0" />
+                            <point x="0.797872" y="0.0313015" />
+                            <point x="0.797872" y="0.968699" />
+                            <point x="0.5" y="0.995058" />
+                            <point x="0.212766" y="0.967051" />
                         </collision-poly>
                     </frame>
                 </animation>

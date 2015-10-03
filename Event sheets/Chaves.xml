@@ -14,6 +14,14 @@
                     <param id="0" name="Variable">Required_Score</param>
                     <param id="1" name="Value">10</param>
                 </action>
+                <action id="4" name="Set animation" sid="2677821910482619" type="TopPipe">
+                    <param id="0" name="Animation">&quot;Chaves&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9993813349125876" type="BottomPipe">
+                    <param id="0" name="Animation">&quot;Chaves&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
     </events>
