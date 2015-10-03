@@ -5,5 +5,16 @@
     <events>
         <include>Common in-game</include>
         <variable constant="0" name="Layout_Name" sid="2694300333816315" static="0" type="text"></variable>
+        <event-block sid="1521223729928333">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9441654859010091" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1754373590587991" type="System">
+                    <param id="0" name="Variable">Layout_Name</param>
+                    <param id="1" name="Value">&quot;Continuous&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
