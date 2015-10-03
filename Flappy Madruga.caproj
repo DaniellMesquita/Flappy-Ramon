@@ -2,7 +2,7 @@
 <c2project>
     <name>Flappy Madruga</name>
     <description>Seu Madruga sofreu um feitiço da Bruxa do 71 e foi transformado em um pássaro. Ajude-o a desviar dos inimigos e conseguir reverter o feitiço!</description>
-    <version>0.4.3.4</version>
+    <version>0.4.3.6</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -206,10 +206,12 @@
     </object-folder>
     <families />
     <layout-folder>
+        <layout-folder name="Levels" />
         <layout>Start.xml</layout>
         <layout>Continuous.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-folder name="Levels" />
         <event-sheet>Continuous events.xml</event-sheet>
         <event-sheet>Start events.xml</event-sheet>
     </event-folder>
